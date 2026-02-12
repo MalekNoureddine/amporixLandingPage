@@ -47,7 +47,7 @@ body [lang]:not(.active-lang) {
     z-index: 1000;
     background: white;
     padding: 8px 12px;
-    border-radius: 25px;
+    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 10px;
@@ -57,7 +57,7 @@ body [lang]:not(.active-lang) {
     background: transparent;
     border: 2px solid #ddd;
     padding: 6px 16px;
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -197,7 +197,8 @@ body [lang]:not(.active-lang) {
     background: white;
     color: var(--secondary-purple);
     padding: 20px 60px;
-    border-radius: 35px;
+    /* padding: 9px 9px; */
+    border-radius: 8px;
     text-decoration: none;
     font-size: 1.3em;
     font-weight: 700;
@@ -222,7 +223,7 @@ body [lang]:not(.active-lang) {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 30px 20px;
 }
 
 .section-title {
@@ -355,7 +356,8 @@ body [lang]:not(.active-lang) {
 
 /* ===== COMPARISON SECTION ===== */
 .comparison-section {
-    background: #f8f9fa;
+    background: #d1c9fd;
+;
     padding: 80px 20px;
 }
 
@@ -374,13 +376,19 @@ body [lang]:not(.active-lang) {
     background: white;
 }
 
-.posture-image {
+.posture-bad .posture-image {
     width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
 }
 
+.posture-good .posture-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
 .posture-bad .posture-image {
     background-image: var(--bad-posture-image);
     background-color: var(--red-light);
@@ -470,7 +478,7 @@ body [lang]:not(.active-lang) {
 /* ===== PRODUCT GALLERY ===== */
 .gallery-section {
     background: white;
-    padding: 80px 20px;
+    padding: 30px 20px;
 }
 
 .product-gallery {
@@ -525,7 +533,7 @@ body [lang]:not(.active-lang) {
 /* ===== NEWS SECTION ===== */
 .news-section {
     background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
-    padding: 80px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -600,7 +608,9 @@ body [lang]:not(.active-lang) {
 /* ===== TESTIMONIALS SECTION ===== */
 .testimonials-section {
     background: #f5f5f5;
-    padding: 80px 20px;
+    padding: 30px 20px;
+    /* color: var(--secondary-purple); */
+    background-color: #c5b9ff;
 }
 
 .testimonials-grid {
@@ -673,13 +683,14 @@ body [lang]:not(.active-lang) {
 .final-cta {
     background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 100%);
     color: white;
-    padding: 100px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .final-title {
     font-size: 3em;
     margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 .final-subtitle {
@@ -707,6 +718,7 @@ body [lang]:not(.active-lang) {
     margin-top: 30px;
     font-size: 1.1em;
 }
+
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 968px) {
@@ -754,6 +766,12 @@ body [lang]:not(.active-lang) {
     .testimonials-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+        .anatomy-image {
+    width: 58%;
+    height: 240px;
+    background: var(--hand-anatomy-image) center center no-repeat;
+    background-size: cover;
+}
 }
 
 @media (max-width: 640px) {
@@ -794,4 +812,59 @@ body [lang]:not(.active-lang) {
     .testimonial-image {
         height: 220px;
     }
+    /* new567 */
+
+    .final-cta{
+    padding: 60px 20px;
+    }
+
+        .anatomy-image {
+    width: 100%;
+    height: 290px;
+    background: var(--hand-anatomy-image) center center no-repeat;
+    background-size: cover;
 }
+}
+@media (max-width: 483px){
+.final-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.price-box{
+    padding: 23px;
+}
+.final-cta .cta-button{
+    margin-top: 0px;
+    padding: 9px 9px;
+}
+
+.gallery-section{
+    padding: 25px 20px;
+    color: var(--secondary-purple);
+}
+
+.news-section{
+    padding: 25px 20px;
+}
+
+.design-section{
+    padding: 25px 20px;
+}
+        .anatomy-image {
+    width: 100%;
+    height: 197px;
+    background: var(--hand-anatomy-image) center center no-repeat;
+    background-size: cover;
+}
+.posture-good .posture-image{
+    height: 145px;
+}
+}
+/* @media (max-width: 435px) {
+    .anatomy-image {
+    width: 100%;
+    height: 178px;
+    background: var(--hand-anatomy-image) center center no-repeat;
+    background-size: cover;
+    } */
