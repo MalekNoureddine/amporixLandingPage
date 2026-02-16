@@ -5,89 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travaillez Sans Douleur Enfin - Souris Ergonomique</title>
     
-    <!-- Preconnect to external domains -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Optimized Google Fonts with display=swap for performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Critical CSS inlined -->
-    <style>
-        /* Critical above-the-fold styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        body [lang]:not(.active-lang) {
-            display: none;
-        }
-        
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #201366;
-            overflow: hidden;
-        }
-        
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 0;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(150deg, rgba(174, 143, 247, 0.808) 10%, rgba(61, 20, 102, 0.85) 50%);
-            z-index: 1;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
-            color: white;
-        }
-        
-        .logo-container {
-            position: absolute;
-            top: 30px;
-            left: 130px;
-            z-index: 10;
-        }
-        
-        .logo {
-            width: 120px;
-            height: auto;
-        }
-    </style>
-    
-    <!-- Load full stylesheet after critical content -->
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Language Switcher -->
@@ -98,20 +22,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="./landingimages/pexels-ryutaro-5745010.jpg" 
-             alt="Background" 
-             class="hero-bg"
-             width="1920"
-             height="1080"
-             loading="eager">
-             
         <div class="logo-container">
-            <img class="logo" 
-                 src="./landingimages/Artboard6.png" 
-                 alt="Logo"
-                 width="120"
-                 height="120"
-                 loading="eager">
+            <img class="logo" src="./landingimages/Artboard6.png" alt="Logo">
         </div>
 
         <div class="hero-content">
@@ -163,12 +75,7 @@
                 <h2 class="section-title">Quand vous ignorez la douleur...<br>votre corps finit par vous arrêter</h2>
                 
                 <div class="pain-visual">
-                    <img src="./landingimages/pain_image.png" 
-                         alt="Douleur au poignet" 
-                         class="pain-image-img"
-                         width="600"
-                         height="400"
-                         loading="lazy">
+                    <div class="pain-image"></div>
                     <div>
                         <h3 class="subsection-title">La progression silencieuse</h3>
                         <p class="description-text">
@@ -225,12 +132,7 @@
                 <h2 class="section-title">When you ignore the pain...<br>your body eventually stops you</h2>
                 
                 <div class="pain-visual">
-                    <img src="./landingimages/pain_image.png" 
-                         alt="Wrist pain" 
-                         class="pain-image-img"
-                         width="600"
-                         height="400"
-                         loading="lazy">
+                    <div class="pain-image"></div>
                     <div>
                         <h3 class="subsection-title">The silent progression</h3>
                         <p class="description-text">
@@ -292,12 +194,7 @@
                 <h2 class="section-title">Comprendre le problème :<br>L'anatomie de la douleur</h2>
                 
                 <div class="anatomy-grid">
-                    <img src="./landingimages/Anatomical diagram.png" 
-                         alt="Diagramme anatomique de la main" 
-                         class="anatomy-image-img"
-                         width="500"
-                         height="260"
-                         loading="lazy">
+                    <div class="anatomy-image"></div>
                     <div>
                         <h3 class="subsection-title">Qu'est-ce qui cause la douleur ?</h3>
                         
@@ -333,12 +230,7 @@
                 <h2 class="section-title">Understanding the problem:<br>The anatomy of pain</h2>
                 
                 <div class="anatomy-grid">
-                    <img src="./landingimages/Anatomical diagram.png" 
-                         alt="Anatomical diagram of the hand" 
-                         class="anatomy-image-img"
-                         width="500"
-                         height="260"
-                         loading="lazy">
+                    <div class="anatomy-image"></div>
                     <div>
                         <h3 class="subsection-title">What causes the pain?</h3>
                         
@@ -380,12 +272,7 @@
                 
                 <div class="posture-comparison">
                     <div class="posture-card posture-bad">
-                        <img src="./landingimages/BadPostion.jpg" 
-                             alt="Mauvaise posture avec souris classique" 
-                             class="posture-image-img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
+                        <div class="posture-image"></div>
                         <div class="posture-content">
                             <h3>❌ Souris classique</h3>
                             <p class="posture-subtitle"><strong>Position non naturelle</strong></p>
@@ -400,12 +287,7 @@
                     </div>
 
                     <div class="posture-card posture-good">
-                        <img src="./landingimages/GoodPosition.png" 
-                             alt="Bonne posture avec souris ergonomique" 
-                             class="posture-image-img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
+                        <div class="posture-image"></div>
                         <div class="posture-content">
                             <h3>✓ Souris verticale</h3>
                             <p class="posture-subtitle"><strong>Position naturelle</strong></p>
@@ -427,12 +309,7 @@
                 
                 <div class="posture-comparison">
                     <div class="posture-card posture-bad">
-                        <img src="./landingimages/BadPostion.jpg" 
-                             alt="Bad posture with regular mouse" 
-                             class="posture-image-img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
+                        <div class="posture-image"></div>
                         <div class="posture-content">
                             <h3>❌ Regular mouse</h3>
                             <p class="posture-subtitle"><strong>Unnatural position</strong></p>
@@ -447,12 +324,7 @@
                     </div>
 
                     <div class="posture-card posture-good">
-                        <img src="./landingimages/GoodPosition.png" 
-                             alt="Good posture with ergonomic mouse" 
-                             class="posture-image-img"
-                             width="400"
-                             height="300"
-                             loading="lazy">
+                        <div class="posture-image"></div>
                         <div class="posture-content">
                             <h3>✓ Vertical mouse</h3>
                             <p class="posture-subtitle"><strong>Natural position</strong></p>
@@ -509,28 +381,13 @@
                 <h2 class="section-title">Découvrez chaque détail de notre souris ergonomique</h2>
                 
                 <div class="product-gallery">
-                    <div class="gallery-item">
-                        <img src="./landingimages/Angle02.jpg" 
-                             alt="Angle parfait de la souris" 
-                             width="400"
-                             height="350"
-                             loading="lazy">
+                    <div class="gallery-item gallery-item-1">
                         <div class="gallery-label">Angle parfait</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="./landingimages/Angle01.jpg" 
-                             alt="Contrôles intuitifs" 
-                             width="400"
-                             height="350"
-                             loading="lazy">
+                    <div class="gallery-item gallery-item-2">
                         <div class="gallery-label">Contrôles intuitifs</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="./landingimages/back_mouse.png" 
-                             alt="Réponse rapide" 
-                             width="400"
-                             height="350"
-                             loading="lazy">
+                    <div class="gallery-item gallery-item-3">
                         <div class="gallery-label">Réponse rapide</div>
                     </div>
                 </div>
@@ -541,28 +398,13 @@
                 <h2 class="section-title">Discover every detail of our ergonomic mouse</h2>
                 
                 <div class="product-gallery">
-                    <div class="gallery-item">
-                        <img src="./landingimages/Angle02.jpg" 
-                             alt="Perfect angle" 
-                             width="400"
-                             height="350"
-                             loading="lazy">
+                    <div class="gallery-item gallery-item-1">
                         <div class="gallery-label">Perfect angle</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="./landingimages/Angle01.jpg" 
-                             alt="Intuitive controls" 
-                             width="400"
-                             height="350"
-                             loading="lazy">
+                    <div class="gallery-item gallery-item-2">
                         <div class="gallery-label">Intuitive controls</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="./landingimages/back_mouse.png" 
-                             alt="Fast response" 
-                             width="400"
-                             height="350"
-                             loading="lazy">
+                    <div class="gallery-item gallery-item-3">
                         <div class="gallery-label">Fast response</div>
                     </div>
                 </div>
@@ -637,12 +479,7 @@
                         </a>
                     </div>
 
-                    <img src="./landingimages/Angle02.jpg" 
-                         alt="Design ergonomique détaillé" 
-                         class="design-image-container-img"
-                         width="600"
-                         height="500"
-                         loading="lazy">
+                    <div class="design-image-container"></div>
                 </div>
             </div>
 
@@ -681,12 +518,7 @@
                         </a>
                     </div>
 
-                    <img src="./landingimages/Angle02.jpg" 
-                         alt="Detailed ergonomic design" 
-                         class="design-image-container-img"
-                         width="600"
-                         height="500"
-                         loading="lazy">
+                    <div class="design-image-container"></div>
                 </div>
             </div>
         </div>
@@ -702,11 +534,7 @@
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="./landingimages/test11.jpeg" 
-                                 alt="Client utilisant la souris ergonomique"
-                                 width="320"
-                                 height="260"
-                                 loading="lazy">
+                            <img src="./landingimages/test11.jpeg" alt="Client utilisant la souris ergonomique">
                         </div>
                         <div class="testimonial-label">Client</div>
                         <p class="testimonial-text">
@@ -726,11 +554,7 @@
 
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="./landingimages/test02.jpg" 
-                                 alt="Client utilisant la souris ergonomique"
-                                 width="320"
-                                 height="260"
-                                 loading="lazy">
+                            <img src="./landingimages/test02.jpg" alt="Client utilisant la souris ergonomique">
                         </div>
                         <div class="testimonial-label">Client</div>
                         <p class="testimonial-text">
@@ -748,11 +572,7 @@
 
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="./landingimages/tes03-(1)1.png" 
-                                 alt="Client utilisant la souris ergonomique"
-                                 width="320"
-                                 height="260"
-                                 loading="lazy">
+                            <img src="./landingimages/tes03-(1)1.png" alt="Client utilisant la souris ergonomique">
                         </div>
                         <div class="testimonial-label">Client</div>
                         <p class="testimonial-text">
@@ -776,11 +596,7 @@
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="./landingimages/test11.jpeg" 
-                                 alt="Customer using ergonomic mouse"
-                                 width="320"
-                                 height="260"
-                                 loading="lazy">
+                            <img src="./landingimages/test11.jpeg" alt="Customer using ergonomic mouse">
                         </div>
                         <div class="testimonial-label">Client</div>
                         <p class="testimonial-text">
@@ -799,11 +615,7 @@
 
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="./landingimages/test02.jpg" 
-                                 alt="Customer using ergonomic mouse"
-                                 width="320"
-                                 height="260"
-                                 loading="lazy">
+                            <img src="./landingimages/test02.jpg" alt="Customer using ergonomic mouse">
                         </div>
                         <div class="testimonial-label">Client</div>
                         <p class="testimonial-text">
@@ -821,11 +633,7 @@
 
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="./landingimages/tes03-(1)1.png" 
-                                 alt="Customer using ergonomic mouse"
-                                 width="320"
-                                 height="260"
-                                 loading="lazy">
+                            <img src="./landingimages/tes03-(1)1.png" alt="Customer using ergonomic mouse">
                         </div>
                         <div class="testimonial-label">Client</div>
                         <p class="testimonial-text">
@@ -889,7 +697,7 @@
         </div>
     </section>
 
-    <!-- JavaScript - Deferred for performance -->
-    <script src="script.js" defer></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
