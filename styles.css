@@ -695,7 +695,7 @@ body [lang]:not(.active-lang) {
 }
 
 .final-titleFr {
-    font-size: 2.2em;
+    font-size: 2.6em;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -886,6 +886,11 @@ body [lang]:not(.active-lang) {
 @media (max-width: 483px){
 .final-title {
     font-size: 2.5em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.final-titleFr {
+    font-size: 2em;
     margin-bottom: 30px;
     line-height: 1.6;
 }
