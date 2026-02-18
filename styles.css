@@ -690,7 +690,7 @@ body [lang]:not(.active-lang) {
 .final-cta {
     background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 100%);
     color: white;
-    padding: 50px 20px;
+    padding: 25px 20px;
     text-align: center;
 }
 
@@ -716,7 +716,7 @@ body [lang]:not(.active-lang) {
     padding: 40px;
     border-radius: 20px;
     max-width: 500px;
-    margin: 40px auto;
+    margin: 20px auto;
     backdrop-filter: blur(10px);
 }
 
@@ -873,7 +873,7 @@ body [lang]:not(.active-lang) {
     /* new567 */
 
     .final-cta{
-    padding: 60px 20px;
+    padding: 25px 20px;
     }
 
         .anatomy-image {
@@ -890,7 +890,7 @@ body [lang]:not(.active-lang) {
     line-height: 1.6;
 }
 .final-titleFr {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 30px;
     line-height: 1.6;
 }
